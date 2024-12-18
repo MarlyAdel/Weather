@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="Css/all.min.css">
+    <link rel="stylesheet" href="Css/bootstrap.min.css">
+    <link rel="stylesheet" href="Css/style.css">
+</head>
+
+<body>
+
+    <!-- * Navbar -->
+
+    <nav class="navbar navbar-expand-lg  navbar-dark">
+        <div class="container py-4 my-3 me-3">
+            <img src="Images/logo.png" alt="logo" width="64">
+            <div class="logo-text d-flex flex-column align-items-center">
+                <a class="navbar-brand pb-0 ms-3 fw-bold fs-6" href="#"> Weather</a>
+                <small class="small-font ms-3">tagline goes here</small>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto  mb-lg-0 pe-5">
+                    <li class="active me-4">
+                        <a class=" home " href="#">Home</a>
+                    </li>
+                    <li class="links me-4">
+                        <a class="" href="#">News</a>
+                    </li>
+                    <li class="links me-4">
+                        <a class="" href="#">Live cameras</a>
+                    </li>
+                    <li class="links me-4">
+                        <a class="" href="#">Photos</a>
+                    </li>
+                    <li class="links me-4">
+                        <a class="" href="#">Contact</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- * Main -->
+
+    <main>
+        <section>
+            <div class="home-img">
+                <div class="container">
+                    <div
+                        class="form text-center d-flex align-items-center justify-content-center pt-5 position-relative">
+                        <input id="search" type="text" placeholder="Find your Location..." class=" mt-4" />
+                        <input type="button" value="Find" id="submit" />
+                    </div>
+                </div>
+                <div class="container my-5 me-2 ">
+                    <div class="card-group overflow-hidden">
+                        <div class="card border-0">
+                            <div class="header d-flex justify-content-between py-2 ">
+                                <div class="day ps-2" id="day1"></div>
+                                <div class="date pe-2" id="date1"></div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title" id="city-name"></h5>
+                                <div class="degree">
+                                    <div class="num" id="temp"><sup>o</sup>C</div>
+                                </div>
+                                <div class="icon">
+                                    <img src="Images/moon.webp" alt="icon" id="icon" width="90px">
+                                </div>
+                                <div class="custom mb-3" id="condition"></div>
+                                <span class="pe-3"><img src="Images/umberella.png" width="22px" alt="umberella">
+                                    20%</span>
+                                <span class="pe-3"><img src="Images/wind.png" width="22px" alt="wind"> 18km/h</span>
+                                <span class="pe-2"><img src="Images/compass.png" width="22px" alt="compass"> East</span>
+                            </div>
+                        </div>
+                        <div class="card border-0">
+                            <div class="header-2 py-2 text-center">
+                                <div class="day ps-2" id="day2"></div>
+                            </div>
+                            <div class="card-body2 border-0 text-center">
+                                <div class="icon">
+                                    <img src="Images/sun.webp" id="icon2" alt="icon" width="48px" class="mt-4">
+                                </div>
+                                <div class="degree">
+                                    <div class="num2 mt-3" id="temp2"><sup>o</sup>C</div>
+                                    <small class="small-size"id="min-temp2"><sup>o</sup>C</small>
+                                </div>
+                                <div class="custom mt-3" id="condition2"></div>
+                            </div>
+                        </div>
+                        <div class="card border-0">
+                            <div class="header py-2 text-center">
+                                <div class="day ps-2" id="day3"></div>
+                            </div>
+                            <div class="card-body border-0 text-center">
+                                <div class="icon">
+                                    <img src="Images/rain.webp" id="icon3" alt="icon" width="48px" class="mt-4">
+                                </div>
+                                <div class="degree">
+                                    <div class="num2 mt-3" id="temp3"><sup>o</sup>C</div>
+                                    <small class="small-size" id="min-temp3"><sup>o</sup>C</small>
+                                </div>
+                                <div class="custom mt-3" id="condition3"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- * footer -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <div class="footer-form position-relative">
+                        <input id="subscribe" type="text" placeholder="Enter your email to subscribe..." class=" ms-5 ">
+                        <input type="button" value="Subscribe" id="done" />
+                    </div>
+                </div>
+                <div class="col-md-3 mt-3 offset-1">
+                   <div class="social">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="#"><i class="fa-brands fa-pinterest"></i></i></a>
+                   </div>
+                </div>
+            </div>
+            <p class="footer-text ms-5 mt-4">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+    <script src="Js/bootstrap.bundle.min.js"></script>
+    <script src="Js/main.js"></script>
+
+</body>
+
+</html>
