@@ -16,7 +16,7 @@ window.onload = () => {
 
 async function searchWeather(city) {
 
-  let res = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${city}&days=7`);
+  let res = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${city}&days=7`);
 
     let data = await res.json();
   
