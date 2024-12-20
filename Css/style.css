@@ -150,5 +150,11 @@ span{
         flex-direction: column;
         flex-wrap: wrap;
     }
+    .num{
+        font-size: 60px;
+    }
+    #mainDate{
+        margin-top: 35px;
+    }
 }
 
